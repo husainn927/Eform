@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eForm-C Editable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f1ea;
+    margin:0;
+    padding:10px;
+}
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:#fff;
+    border:1px solid #b5a27a;
+    padding:10px;
+}
+h2, .sub, .title{
+    text-align:center;
+    margin:5px 0;
+}
+.sub{ font-size:14px; }
+.title{ font-weight:bold; }
+
+.redbar, .section{
+    background:#8b2e2e;
+    color:#fff;
+    text-align:center;
+    padding:6px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+}
+td{
+    border:1px solid #ccc;
+    padding:6px;
+    vertical-align:top;
+}
+input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:14px;
+}
+.footer{
+    text-align:center;
+    margin-top:10px;
+    font-size:16px;
+}
+
+.buttons{
+    text-align:center;
+    margin:10px 0;
+}
+button{
+    padding:8px 15px;
+    margin:5px;
+    border:none;
+    background:#8b2e2e;
+    color:#fff;
+    cursor:pointer;
+}
+button:hover{
+    opacity:0.8;
+}
+
+@media print{
+    .buttons{ display:none; }
+}
+</style>
+</head>
+
+<body>
+<div class="container" id="printArea">
+
+<h2>Directorate Of Geology & Mining Uttar Pradesh</h2>
+<div class="sub">
+The Uttar Pradesh Minerals (Prevention of Illegal Mining, Transportation and Storage) Rules, 2018<br>
+eForm-c Pass For Transportation of Minor Mineral See Rule-7(III)
+</div>
+<div class="title">eForm-C</div>
+
+<div class="redbar">VALID FOR ONE TRIP ONLY & See Rule-5(2)</div>
+
+<table>
+<tr>
+<td>1. eForm-C No.</td>
+<td><input placeholder="Enter eForm-C No"></td>
+<td>2. Licensee Id:</td>
+<td><input placeholder="Enter Licensee Id"></td>
+</tr>
+
+<tr>
+<td>3. Name of Licensee:</td>
+<td><input placeholder="Enter Name"></td>
+<td>4. Mobile Number Of Licensee:</td>
+<td><input placeholder="Enter Mobile Number"></td>
+</tr>
+
+<tr>
+<td>5. Destination District :</td>
+<td><input placeholder="Enter District"></td>
+<td>6. Licensee Details:</td>
+<td><input placeholder="Enter Details"></td>
+</tr>
+
+<tr>
+<td>7. Tehsil Of License:</td>
+<td><input placeholder="Enter Tehsil"></td>
+<td>8. District Of License:</td>
+<td><input placeholder="Enter District"></td>
+</tr>
+
+<tr>
+<td>9. Quantity Transported:</td>
+<td><input placeholder="Enter Quantity"></td>
+<td>10. Name Of Mineral:</td>
+<td><input placeholder="Enter Mineral Name"></td>
+</tr>
+
+<tr>
+<td>11. Loading From:</td>
+<td><input placeholder="Enter Loading Location"></td>
+<td>12. Destination:</td>
+<td><input placeholder="Enter Destination"></td>
+</tr>
+
+<tr>
+<td>13. Distance(Approx):</td>
+<td><input placeholder="Enter Distance"></td>
+<td>14. Traveling Duration :</td>
+<td><input placeholder="Enter Duration"></td>
+</tr>
+
+<tr>
+<td>15. eForm-C Generated On:</td>
+<td><input placeholder="Enter Generated Date"></td>
+<td>16. eForm-C Valid Upto:</td>
+<td><input placeholder="Enter Expiry Date"></td>
+</tr>
+
+<tr>
+<td>17. Selling Price(Rs per tonne):</td>
+<td><input placeholder="Enter Price"></td>
+<td>18. Serial Number:</td>
+<td><input placeholder="Enter Serial Number"></td>
+</tr>
+
+<tr>
+<td colspan="4" class="section">DETAILS OF REGISTERED VEHICLE</td>
+</tr>
+
+<tr>
+<td>1. Registration Number :</td>
+<td><input placeholder="Enter Vehicle Number"></td>
+<td>2. Name Of Driver :</td>
+<td><input placeholder="Enter Driver Name"></td>
+</tr>
+
+<tr>
+<td>3. Gross Vehicle Weight in Tonne:</td>
+<td><input placeholder="Enter Weight"></td>
+<td>4. Carrying capacity in Tonne :</td>
+<td><input placeholder="Enter Capacity"></td>
+</tr>
+
+<tr>
+<td>5. Mobile Number Of Driver:</td>
+<td><input placeholder="Enter Driver Mobile"></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div class="footer">
+This eForm-c is valid up to <input placeholder="Enter Expiry Date">
+</div>
+
+</div>
+
+<div class="buttons">
+<button onclick="window.print()">Print</button>
+</div>
+
+</body>
+</html>
